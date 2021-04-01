@@ -19,8 +19,8 @@ const callsuccess = (data = '', message="success") => {
 router.post('/upload', async ctx => {
     const params = {
         grant_type: 'client_credentials',
-        client_id: 'PTkhtcfOqw9h6kXbnMHVC3Mu',
-        client_secret: 'YMzGMFAq0TvhTg4jsNv90WEjPnFG9zZS'
+        client_id: 'your client_id',
+        client_secret: 'your client_secret'
     }
     const {data} = await axios.get('https://aip.baidubce.com/oauth/2.0/token', {
         params
